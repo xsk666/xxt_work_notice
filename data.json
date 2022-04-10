@@ -1,10 +1,24 @@
-{
-    "account":"账号",
-    "password":"密码",
-    "classinfo":[
+[
     {
-        "courseid": "220362501",
-        "clazzid": "45968655",
-        "classname": "测试"
+        "account": "账号",
+        "password": "密码",
+        "classinfo": [
+            {
+                "courseid": "220362501",
+                "clazzid": "45968655",
+                "classname": "测试"
+            }
+        ]
+    },
+    {
+        "account": "账号",
+        "password": "密码",
+        "classinfo": [
+            {
+                "courseid": "220362501",
+                "clazzid": "45968655",
+                "classname": "测试"
+            }
+        ]
     }
-]}
+]
