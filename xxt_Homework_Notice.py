@@ -58,6 +58,8 @@ def get_homework(user):
             doc2 = pq(res3.text)
             # 未交且作业未截至的作业有两个span，一个是未交，一个是截止时间(含fr类名)
             for task in doc2('li .fr').items():
+                if task.siblings("span").text() != "未交":
+                    continue
                 taskname=task.siblings("p").text()
                 txt += f"\n{classname} :{taskname}\n  - {task.text()}"
                 num += 1
