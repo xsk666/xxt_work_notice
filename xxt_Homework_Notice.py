@@ -85,7 +85,7 @@ if __name__ == "__main__":
             password = user["password"]
             url = f"https://passport2-api.chaoxing.com/v11/loginregister?code={password}&cx_xxt_passport=json&uname={account}&loginType=1&roleSelect=true"
             res = req.get(url)
-            if res.json()['mes'] == "验证通过":
+            if res.json().get('status',False):
                 # 获取Cookie
                 cookie = requests.utils.dict_from_cookiejar(req.cookies)
                 mycookie = ""
